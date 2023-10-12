@@ -1,10 +1,8 @@
 package org.example;
 
 public enum FlowerColor {
-    /**
-     * Flower colors.
-     */
-    RED("#FF0000"), BLUE("#0000FF");
+    RED("#FF0000"), YELLOW("#FFFF00"), BLUE("#0000FF"), GREEN("#00FF00"), PURPLE("#800080");
+
     private final String stringRepresentation;
 
     FlowerColor(String stringRepresentation) {

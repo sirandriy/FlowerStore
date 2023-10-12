@@ -23,11 +23,7 @@ public class Flower {
         this.price = 0;
     }
 
-    public Flower(double price) {
+    public Flower(double price){
         this.price = price;
-    }
-
-    public double getPrice() {
-        return price;
     }
 }

@@ -18,4 +18,16 @@ public class Flower {
     public String getColor() {
         return color.toString();
     }
+
+    public Flower(){
+        this.price = 0;
+    }
+
+    public Flower(double price) {
+        this.price = price;
+    }
+
+    public double getPrice() {
+        return price;
+    }
 }

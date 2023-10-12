@@ -27,3 +27,14 @@ jobs:
       - name: Deploy to staging
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: ./deploy-staging.sh
+
+lint:
+  runs-on: ubuntu-latest
+
+  steps:
+    - uses: actions/checkout@v2
+
+    - name: Super-Linter
+      uses: super-linter/super-linter@v5.4.0
+        env:
+          GITHUB_TOKEN: ${{secrets.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}}
